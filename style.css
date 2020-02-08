@@ -9,71 +9,150 @@ body {
   font-family: "Clear Sans";
 }
 
-header .container {
+header {
   display: flex;
   width: 100%;
   height: 163px;
+  flex-direction: column;
   background: #ffffff;
 }
-header .container .header {
+header .header-top-part {
   display: inherit;
   width: inherit;
   height: 106px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-header .container .header .logo {
+header .header-top-part .logo {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 5%;
 }
-header .container .header .head-text {
+header .header-top-part .head-text {
   display: inherit;
   width: inherit;
   flex-direction: column;
 }
-header .container .header .head-text p {
+header .header-top-part .head-text p {
   font-size: 18px;
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 5%;
+  color: #3A4047;
 }
-header .container .header .head-text .work-time {
+header .header-top-part .head-text .work-time {
   font-weight: bold;
   font-size: 14px;
+  color: #3A4047;
 }
-header .container .header .head-contact {
+header .header-top-part .head-contact {
   display: inherit;
   width: inherit;
+  height: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-header .container .header .head-contact .user {
-  padding-bottom: 10%;
+header .header-top-part .head-contact .user {
+  padding-top: 4%;
+  padding-left: 10%;
 }
-header .container .header .head-contact .head-cabinet {
-  display: inline-table;
+header .header-top-part .head-contact .head-cabinet {
+  display: inline-block;
+  width: 48%;
   font-size: 14px;
   padding-left: 1%;
-  padding-top: 3%;
-  text-decoration: underline;
+  padding-top: 4.5%;
 }
-header .container .header .head-contact .head-mail {
-  display: inline-table;
+header .header-top-part .head-contact .head-cabinet a {
+  color: #3A4047;
+}
+header .header-top-part .head-contact .head-mail {
+  display: inline-block;
   font-size: 14px;
-  padding-left: 5%;
-  padding-top: 3%;
-  text-decoration: underline;
+  padding-top: 4.5%;
 }
-header .container .header .head-contact .facebook {
+header .header-top-part .head-contact .head-mail a {
+  color: #3A4047;
+}
+header .header-top-part .head-contact .facebook {
   padding-top: 5%;
+  padding-left: 40%;
 }
-header .container .header .head-contact .phone {
+header .header-top-part .head-contact .phone {
   padding-top: 5%;
   padding-left: 5%;
 }
-header .container .header .head-contact .phone-number {
+header .header-top-part .head-contact .phone-number {
   font-size: 18px;
   font-weight: bold;
   color: #3A4047;
   padding-left: 2%;
-  padding-top: 10%;
+  padding-top: 4.5%;
+}
+header .header-top-part .head-contact .d-arrow {
+  padding-top: 4%;
+  padding-left: 2%;
+}
+header .header-top-part .shop-cart {
+  display: inherit;
+  padding-right: 10%;
+}
+header .header-top-part .shop-cart .shop-id {
+  display: inherit;
+  padding-bottom: 35%;
+}
+header .nav {
+  display: inherit;
+  width: inherit;
+  justify-content: center;
+}
+header .nav ul {
+  display: inherit;
+  width: inherit;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+header .nav ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 5%;
+  font-size: 18px;
+}
+header .nav ul li a {
+  color: #3A4047;
+  text-decoration: none;
+}
+header .nav .search {
+  display: inherit;
+  margin-top: 1%;
+  margin-right: 10%;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+section .order {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  height: 350px;
+  background: url("img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .order .title {
+  font-size: 57px;
+  color: white;
+  padding: 5% 9% 0 9%;
+}
+section .order .delivery {
+  margin-top: 1%;
+  font-size: 24px;
+  color: white;
+}
+section .order .order {
+  width: 15%;
 }
