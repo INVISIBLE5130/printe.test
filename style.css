@@ -89,29 +89,37 @@ header .header-top-part .head-contact .phone-number {
   padding-left: 2%;
   padding-top: 4.5%;
 }
-header .header-top-part .head-contact ul li {
-  list-style: none;
-}
-header .header-top-part .head-contact ul li .d-arrow {
+header .header-top-part .head-contact div {
   display: flex;
-  float: right;
-  padding-top: 4%;
-  padding-left: 2%;
+  margin-top: 5%;
+  margin-left: 1%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #EDEDED;
+  justify-content: center;
 }
-header .header-top-part .head-contact ul li .phones {
+header .header-top-part .head-contact div .d-arrow {
   display: flex;
+  transform: rotate(180deg);
+}
+header .header-top-part .head-contact div .d-arrow:hover {
+  transform: rotate(0deg);
+}
+header .header-top-part .head-contact div .d-arrow:hover + .dropdown {
+  display: flex;
+}
+header .header-top-part .head-contact div .dropdown {
+  display: none;
   flex-direction: column;
   background: white;
-  min-width: 15%;
+  width: 200px;
   position: absolute;
   top: 15%;
   right: 14.5%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
 }
-header .header-top-part .head-contact ul li .phones li {
+header .header-top-part .head-contact div .dropdown li {
   text-align: center;
   padding: 5%;
   list-style: none;
@@ -119,37 +127,38 @@ header .header-top-part .head-contact ul li .phones li {
   line-height: 16px;
   color: #3A4047;
 }
-header .header-top-part .head-contact ul li .phones li img {
+header .header-top-part .head-contact div .dropdown li img {
   margin-right: 2%;
 }
-header .header-top-part .shop-cart {
+header .shop-cart {
   display: flex;
   align-items: center;
   position: relative;
   padding-right: 10%;
 }
-header .header-top-part .shop-cart .shop-wrapper {
+header .shop-cart .shop-wrapper {
   position: relative;
   width: 44px;
   height: 44px;
 }
-header .header-top-part .shop-cart .shop-id {
+header .shop-cart .shop-id {
   display: inherit;
   position: absolute;
   top: -5px;
   right: -20px;
 }
-header .nav {
+
+.nav {
   display: inherit;
   width: inherit;
   height: 100%;
 }
-header .nav ul {
+.nav ul {
   display: inherit;
   flex-direction: row;
   width: inherit;
 }
-header .nav ul li {
+.nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,14 +168,14 @@ header .nav ul li {
   margin-left: 5%;
   font-size: 18px;
 }
-header .nav ul li a {
+.nav ul li a {
   color: #3A4047;
   text-decoration: none;
 }
-header .nav ul li:hover {
+.nav ul li:hover {
   border-top: 1px solid #1AB0CE;
 }
-header .nav .search {
+.nav .search {
   display: inherit;
   margin-right: 10%;
   cursor: pointer;
@@ -585,14 +594,53 @@ footer .footer .part-5 .contacts .phone-footer {
   margin: 0 5% 0 5%;
 }
 footer .footer .part-5 .contacts .phone-number-footer {
+  display: contents;
   font-family: "Clear Sans";
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   color: #3A4047;
 }
-footer .footer .part-5 .contacts .d-arrow-footer {
-  margin-right: 10%;
+footer .footer .part-5 .contacts div {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-left: 2%;
+  border-radius: 50%;
+  background: #EDEDED;
+  justify-content: center;
+}
+footer .footer .part-5 .contacts div .d-arrow-footer {
+  display: flex;
+  transform: rotate(0deg);
+}
+footer .footer .part-5 .contacts div .d-arrow-footer:hover {
+  transform: rotate(180deg);
+}
+footer .footer .part-5 .contacts div .d-arrow-footer:hover + .dropdown-footer {
+  display: flex;
+}
+footer .footer .part-5 .contacts div .dropdown-footer {
+  display: none;
+  flex-direction: column;
+  background: white;
+  width: 200px;
+  position: absolute;
+  bottom: 100%;
+  right: 4%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+footer .footer .part-5 .contacts div .dropdown-footer li {
+  text-align: center;
+  padding: 5%;
+  list-style: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3A4047;
+  text-decoration: none;
+}
+footer .footer .part-5 .contacts div .dropdown-footer li img {
+  margin-right: 2%;
 }
 footer .footer .part-5 ul {
   margin: 5% 10% 0 0;
