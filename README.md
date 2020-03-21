@@ -4,3 +4,5 @@
 2) The site is supported at resolutions 1366 * 768, 1920 * 1080;
 3) I wrote using flexbox;
 4) Used the SCSS preprocessor.
+
+https://tender-babbage-2faa7f.netlify.com/
